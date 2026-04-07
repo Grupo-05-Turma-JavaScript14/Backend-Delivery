@@ -1,9 +1,10 @@
 import { IsNotEmpty, Length} from 'class-validator';
 import {  Column,  Entity, PrimaryGeneratedColumn, } from 'typeorm';
 
-@Entity({ name: 'db_vitarun' }) //Cria uma tabela chamada tb_postagem
+@Entity({ name: 'db_vitarun' }) 
 export class Loja {
-  @PrimaryGeneratedColumn() //cria uma chave primaria e auto increment
+
+  @PrimaryGeneratedColumn() 
   id!: number;
 
   @IsNotEmpty()
@@ -16,15 +17,19 @@ export class Loja {
   descricao!: string;
   
   @IsNotEmpty() 
-  @Column({nullable:false})
-  cnpj!: number;
+  @Column({ length: 14, nullable: false })
+  cnpj!: string;
 
   @IsNotEmpty()
   @Column({ length: 255, nullable: false })
   categoria!: string;
   
   @IsNotEmpty()
-  @Column({ nullable: false })
-  cep!: number;  
+  @Column({  length: 9, nullable: false})
+  cep!: string;  
+
+  
+  @Column({ default: false })
+  aberto?: boolean;
 
 }
