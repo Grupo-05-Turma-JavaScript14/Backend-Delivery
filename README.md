@@ -22,13 +22,13 @@ npm install cpf-cnpj-validator
 
 ##Colaboradores:
 
-<a href="https://github.com/luhdias-png" target="_blank">Andre</a> PO
-<a href="https://github.com/Dessxevy" target="_blank">Andressa </a> Dev
-<a href="https://github.com/bruzuppini" target="_blank">Bruna</a> Dev
-<a href="https://github.com/DougSan7" target="_blank">Douglas</a> Dev
-<a href="https://github.com/gcoutinhoo" target="_blank">Gabril</a> Dev
-<a href="https://github.com/kayanedvlsantos-create" target="_blank">Kay Ira</a> PO
-<a href="https://github.com/lohannab" target="_blank">Lohanna </a> PO
+<a href="https://github.com/luhdias-png" target="_blank">Andre</a> PO <br>
+<a href="https://github.com/Dessxevy" target="_blank">Andressa </a> Dev <br>
+<a href="https://github.com/bruzuppini" target="_blank">Bruna</a> Dev <br>
+<a href="https://github.com/DougSan7" target="_blank">Douglas</a> Dev <br>
+<a href="https://github.com/gcoutinhoo" target="_blank">Gabril</a> Dev <br>
+<a href="https://github.com/kayanedvlsantos-create" target="_blank">Kay Ira</a> PO <br>
+<a href="https://github.com/lohannab" target="_blank">Lohanna </a> PO <br>
 
 ---
 
