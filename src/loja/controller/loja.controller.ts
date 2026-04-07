@@ -1,4 +1,4 @@
-import { Body, Controller, Delete, Get, HttpCode, HttpStatus, Param, ParseIntPipe, Post } from "@nestjs/common";
+import { Body, Controller, Delete, Get, HttpCode, HttpStatus, Param, ParseIntPipe, Post, Put } from "@nestjs/common";
 import { LojaService } from "../services/loja.service";
 import { Loja } from "../entitites/loja.entity";
 
@@ -18,10 +18,16 @@ export class LojaController{
         return this.lojaService.findById(id);
     }
 
-    @Get('/:nome') // ex: http://localhost:4000/loja/(nome)
+    @Get('/nome/:nome') // ex: http://localhost:4000/loja/(nome)
     @HttpCode(HttpStatus.OK)
     findByNome(@Param('nome') nome: string) : Promise<Loja[]>{ // pesquisar por nome
         return this.lojaService.findByNome(nome);
+    }
+    
+    @Put()
+    @HttpCode(HttpStatus.OK)
+    update(@Body() loja: Loja): Promise<Loja>{
+        return this.lojaService.update(loja);
     }
 
     @Post() // ex: http://localhost:4000/loja
@@ -29,6 +35,7 @@ export class LojaController{
     create(@Body() loja: Loja): Promise<Loja>{  // criar pelo Json
         return this.lojaService.create(loja);
     }
+
 
     @Delete('/:id') //ex: http://localhost:4000/loja/(id)
     @HttpCode(HttpStatus.OK)

@@ -45,9 +45,11 @@ export class LojaService { //Define o Service
         return await this.lojaRepository.save(loja); //Salvar dados Atualizados
     } 
 
-    async delete(id: number): Promise<DeleteResult> {
-        await this.findById(id); //Verifica se o ID da Loja Existe
+    async delete(id: number): Promise<{ message: string }> {
+        await this.findById(id);
 
-        return await this.lojaRepository.delete(id); //Apaga do Banco
-    }
+        await this.lojaRepository.delete(id);
+
+        return { message: 'Deletado com sucesso' };
+}
 }

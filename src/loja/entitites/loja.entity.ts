@@ -17,7 +17,7 @@ export class Loja {
   
   @IsNotEmpty() 
   @Column({nullable:false})
-  cnpj!: number;
+  cnpj!: string;
 
   @IsNotEmpty()
   @Column({ length: 255, nullable: false })
@@ -25,6 +25,6 @@ export class Loja {
   
   @IsNotEmpty()
   @Column({ nullable: false })
-  cep!: number;  
+  cep!: string;  
 
 }
