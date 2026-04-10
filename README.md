@@ -1,136 +1,203 @@
+<h1 align="center">🥗 VittaRun</h1>
 
-## Como rodar o projeto
+<p align="center">
+  <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDRqMGx3emRmajVlYTE3czd6ZnUzcXljYTdscGNteTNsMG9oZzBnMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0NhYFsizKAX6LWve/giphy.gif" alt="VittaRun GIF" width="300"/>
+</p>
 
-Instale as dependências:
+<p align="center">
+  <em>Plataforma de Delivery de Alimentos Saudáveis</em>
+</p>
 
-```bash
-# Tipagens do Node (dev)
-npm install --save-dev @types/node
-
-# Validação e transformação de dados
-npm install class-validator class-transformer
-
-# TypeORM + integração com NestJS
-npm install @nestjs/typeorm typeorm
-
-# Driver do MySQL
-npm install mysql2
-
-# Validação de CPF e CNPJ
-npm install cpf-cnpj-validator
-```
-
-## Colaboradores:
-
-<a href="https://github.com/luhdias-png" target="_blank">Andre</a> PO <br>
-<a href="https://github.com/Dessxevy" target="_blank">Andressa </a> Dev <br>
-<a href="https://github.com/bruzuppini" target="_blank">Bruna</a> Dev <br>
-<a href="https://github.com/DougSan7" target="_blank">Douglas</a> Dev <br>
-<a href="https://github.com/gcoutinhoo" target="_blank">Gabriel</a> Dev <br>
-<a href="https://github.com/kayanedvlsantos-create" target="_blank">Kay Ira</a> Tester <br>
-<a href="https://github.com/lohannab" target="_blank">Lohanna </a> Tester <br>
+<p align="center">
+  <img alt="NestJS" src="https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white"/>
+  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/>
+  <img alt="MySQL" src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
+  <img alt="TypeORM" src="https://img.shields.io/badge/TypeORM-FE0803?style=for-the-badge&logoColor=white"/>
+  <img alt="class-validator" src="https://img.shields.io/badge/class--validator-✔-brightgreen?style=for-the-badge"/>
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen?style=for-the-badge"/>
+</p>
 
 ---
 
-# Run
-$ npm run start
+## 📖 Sobre o Projeto
 
---- 
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
-</p>
+O **VittaRun** é uma aplicação backend para gerenciamento de lojas dentro de uma plataforma de delivery de alimentos saudáveis.
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+A proposta conecta usuários a estabelecimentos especializados em refeições equilibradas — como opções **fit, veganas e naturais** — trazendo praticidade sem abrir mão da saúde.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+---
 
-## Description
+## 🧩 Problema & Solução
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+A maioria dos apps de delivery prioriza fast food, dificultando o acesso a opções saudáveis. O VittaRun resolve isso com uma plataforma **focada exclusivamente em alimentação saudável**.
 
-## Project setup
+| Problema | Solução |
+|----------|---------|
+| 🚫 Baixa oferta de opções saudáveis | ✅ Plataforma exclusiva para lojas saudáveis |
+| 🚫 Falta de categorização eficiente | ✅ Organização por categorias (fit, vegano, natural) |
+| 🚫 Difícil encontrar estabelecimentos especializados | ✅ Busca por nome e categoria |
+| 🚫 Pouco equilíbrio entre praticidade e saúde | ✅ Delivery rápido com curadoria saudável |
 
-```bash
-$ npm install
+---
+
+## ✨ Funcionalidades
+
+| Método | Descrição |
+|--------|-----------|
+| `findAll()` | Lista todas as lojas cadastradas |
+| `findById()` | Retorna uma loja pelo seu ID |
+| `findByNome()` | Busca lojas por nome ou categoria |
+| `create()` | Cadastra uma nova loja |
+| `update()` | Atualiza dados de uma loja existente |
+| `delete()` | Remove uma loja do sistema |
+
+---
+
+## 🗂️ Entidade: Loja
+
+```
+Loja
+├── id          → gerado automaticamente
+├── nome        → nome da loja
+├── cnpj        → CNPJ da loja (validado)
+├── categoria   → fit | vegano | natural
+├── descricao   → informações adicionais
+├── cep         → código postal (validado)
+└── aberto      → boolean (aberta/fechada)
 ```
 
-## Compile and run the project
+---
 
-```bash
-# development
-$ npm run start
+## 🗃️ Diagrama ER
 
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
+```mermaid
+erDiagram
+    LOJA {
+        int id PK
+        string nome
+        string cnpj
+        string categoria
+        string descricao
+        string cep
+        boolean aberto
+    }
 ```
 
-## Run tests
+---
 
-```bash
-# unit tests
-$ npm run test
+## 🔗 Endpoints da API
 
-# e2e tests
-$ npm run test:e2e
+| Método | Rota | Descrição |
+|--------|------|-----------|
+| `POST` | `/lojas` | Cadastrar nova loja |
+| `GET` | `/lojas` | Listar todas as lojas |
+| `GET` | `/lojas/:id` | Buscar loja por ID |
+| `GET` | `/lojas/nome/:nome` | Buscar loja por nome |
+| `PUT` | `/lojas` | Atualizar loja |
+| `DELETE` | `/lojas/:id` | Remover loja |
 
-# test coverage
-$ npm run test:cov
+### Exemplo de payload
+
+```json
+{
+  "nome": "Verde Vida",
+  "cnpj": "12345678000199",
+  "categoria": "vegano",
+  "descricao": "Restaurante vegano com opções do dia",
+  "cep": "01310100",
+  "aberto": true
+}
 ```
 
-## Deployment
+---
 
-When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
+## 🛠️ Tecnologias Utilizadas
 
-If you are looking for a cloud-based platform to deploy your NestJS application, check out [Mau](https://mau.nestjs.com), our official platform for deploying NestJS applications on AWS. Mau makes deployment straightforward and fast, requiring just a few simple steps:
+| Tecnologia | Finalidade |
+|------------|-----------|
+| **NestJS** | Framework backend |
+| **TypeScript** | Linguagem de desenvolvimento |
+| **MySQL** | Banco de dados relacional |
+| **TypeORM** | Integração com o banco de dados |
+| **class-validator** | Validação de dados dos DTOs |
+| **Insomnia** | Testes das requisições HTTP |
+
+---
+
+## 🧪 Testes Realizados
+
+Testes executados via **Insomnia**, cobrindo:
+
+- ✅ Cadastro de lojas
+- ✅ Listagem de todas as lojas
+- ✅ Busca por ID e por nome
+- ✅ Atualização de dados
+- ✅ Exclusão de registros
+- ✅ Simulação de erros (dados inválidos, registros inexistentes, categorias sem resultado)
+
+---
+
+## 🚀 Como Executar
+
+### Pré-requisitos
+
+- Node.js v20+
+- MySQL v8+
+- npm
+
+### Instalação
 
 ```bash
-$ npm install -g @nestjs/mau
-$ mau deploy
+# Clone o repositório
+git clone https://github.com/seu-usuario/vittarun.git
+
+# Acesse a pasta do projeto
+cd vittarun
+
+# Instale as dependências
+npm install
 ```
 
-With Mau, you can deploy your application in just a few clicks, allowing you to focus on building features rather than managing infrastructure.
+### Rodando a aplicação
 
-## Resources
+```bash
+npm run start:dev
+```
 
-Check out a few resources that may come in handy when working with NestJS:
+> A API estará disponível em `http://localhost:3000`
 
-- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
-- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
-- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
-- Deploy your application to AWS with the help of [NestJS Mau](https://mau.nestjs.com) in just a few clicks.
-- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
-- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
-- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
-- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
+---
 
-## Support
+## 🔮 Próximas Implementações
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+- [ ] Autenticação de usuários com JWT
+- [ ] Avaliações e comentários sobre as lojas
+- [ ] Filtro avançado por tipo de alimentação
+- [ ] Integração com sistemas de pagamento
+- [ ] Rastreamento de pedidos em tempo real
+- [ ] Recomendação personalizada de refeições
+- [ ] Interface frontend
 
-## Stay in touch
+---
 
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+## 👥 Equipe
 
-## License
+Projeto desenvolvido pela turma **JavaScript 14** da **Generation Brasil**:
 
-Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+| Nome |
+|------|
+| André Lucas - P.O |
+| Andressa Andrade Dev|
+| Bruna Zuppini Dev |
+| Douglas Santos Dev |
+| Gabriel Coutinho Dev |
+| Kay Ira Dev Tester|
+| Lohanna Benjamim Dev Tester|
+
+> São Paulo – SP · 2026
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença **MIT**.
